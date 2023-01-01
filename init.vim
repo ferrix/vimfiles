@@ -14,7 +14,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'Lokaltog/vim-powerline'
+Plug 'tpope/vim-rhubarb'
 
 call plug#end()
 
 set guifont=Comic\ Code\ Light:h12
+colorscheme neverland2
