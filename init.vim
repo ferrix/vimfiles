@@ -11,5 +11,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'Lokaltog/vim-powerline'
 
 call plug#end()
+
+set guifont=Comic\ Code:h12
