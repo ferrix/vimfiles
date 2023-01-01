@@ -17,4 +17,4 @@ Plug 'Lokaltog/vim-powerline'
 
 call plug#end()
 
-set guifont=Comic\ Code:h12
+set guifont=Comic\ Code\ Light:h12
