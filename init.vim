@@ -2,7 +2,7 @@ set relativenumber
 set autoindent
 set vb
 set nocompatible
-let g:mapleader=" "
+let g:mapleader=","
 
 call plug#begin('~/.vim/vendor')
 
