@@ -3,6 +3,7 @@ set autoindent
 set vb
 set nocompatible
 let g:mapleader=","
+set colorcolumn=80,100
 
 call plug#begin('~/.vim/vendor')
 
