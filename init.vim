@@ -35,5 +35,13 @@ call plug#end()
 
 nnoremap <leader><tab> :NERDTreeToggle<CR>
 
+nmap <F8> :TagbarToggle<CR>
+
 set guifont=Comic\ Code\ Light:h12
 colorscheme spacecamp
+
+set completeopt-=preview
+
+if has('nvim')
+  lua require'lspconfig'
+endif
