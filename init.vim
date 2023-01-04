@@ -20,6 +20,10 @@ Plug 'tpope/vim-rhubarb'
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'ap/vim-css-color'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tc50cal/vim-terminal'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
