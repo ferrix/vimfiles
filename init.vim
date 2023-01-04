@@ -23,5 +23,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 
 call plug#end()
 
+nnoremap <leader><tab> :NERDTreeToggle<CR>
+
 set guifont=Comic\ Code\ Light:h12
-colorscheme neverland2
+colorscheme spacecamp
