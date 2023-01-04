@@ -1,3 +1,5 @@
+set relativenumber
+set autoindent
 set vb
 set nocompatible
 let g:mapleader=" "
