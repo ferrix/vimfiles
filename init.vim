@@ -7,7 +7,7 @@ set colorcolumn=80,100
 
 call plug#begin('~/.vim/vendor')
 
-if !has('nvim') && !exists('g:gui_oni') | Plug 'tpope/vim-sensible' | endif
+if !has('nvim') | Plug 'tpope/vim-sensible' | endif
 Plug 'rstacruz/vim-opinion'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
