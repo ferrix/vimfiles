@@ -8,22 +8,22 @@ set colorcolumn=80,100
 call plug#begin('~/.vim/vendor')
 
 if !has('nvim') | Plug 'tpope/vim-sensible' | endif
-Plug 'rstacruz/vim-opinion'
+Plug 'rstacruz/vim-opinion' "" Opinionated configuration TODO assimilate
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'w0rp/ale'
-Plug 'tpope/vim-sleuth'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'tpope/vim-rhubarb'
-Plug 'preservim/nerdtree'
-Plug 'preservim/tagbar'
-Plug 'rafi/awesome-vim-colorschemes'
-Plug 'ap/vim-css-color'
+Plug 'junegunn/fzf.vim' "" Fuzzy finder
+Plug 'dense-analysis/ale' "" Asynchronous Lint Engine
+Plug 'sheerun/vim-polyglot' "" Language pack
+Plug 'tpope/vim-sleuth' "" Tab and space detection
+Plug 'tpope/vim-fugitive' "" Git integration
+Plug 'tpope/vim-rhubarb' "" Git browser
+Plug 'tpope/vim-surround' "" Parenthesis, quotes, etc
+Plug 'preservim/nerdtree' "" File tree
+Plug 'preservim/tagbar' "" Tag list bar
+Plug 'rafi/awesome-vim-colorschemes' "" Color
+Plug 'ap/vim-css-color' "" CSS color preview
+Plug 'vim-airline/vim-airline' "" Statusbar
 Plug 'ryanoasis/vim-devicons'
-Plug 'tc50cal/vim-terminal'
+Plug 'tc50cal/vim-terminal' "" Terminal integration
 Plug 'terryma/vim-multiple-cursors'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
