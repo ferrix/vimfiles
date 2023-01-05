@@ -50,10 +50,34 @@ require('packer').startup(function(use)
     after = 'nvim-treesitter',
   }
 
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('nvim-treesitter/playground')
-  use('theprimeagen/harpoon')
-  use('mbbill/undotree')
+  use 'lewis6991/gitsigns.nvim'
+  use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides on blanks
+  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
+
+  -- Fuzzy Finder (files, lsp, etc)
+  use {
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
+    requires = {'nvim-lua/plenary.nvim'},
+  }
+
+  -- Fuzzy Finder Algorithm which requires local dependencies to be built.
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'mingw32-make',
+    cond = vim.fn.executable 'mingw32-make' == 1,
+  }
+
+  -- Add custom plugins to packed from ~/.config/nvim/lua/custom/plugins.lua
+  local has_plugins, plugins = pcall(require, 'custom.plugins')
+  if has_plugins then
+    plugins(use)
+  end
+
+  use 'williamboman/nvim-lsp-installer'
+  use 'theprimeagen/harpoon'
+  use 'mbbill/undotree'
+
+  if is_bootstrap then
+    require('packer').sync()
+  end
 end)
 
 -- When we are bootstrapping a configuration, it doesn't
