@@ -43,5 +43,5 @@ colorscheme spacecamp
 set completeopt-=preview
 
 if has('nvim')
-  lua require'lspconfig'
+  lua require('ferrix')
 endif
