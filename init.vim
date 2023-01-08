@@ -25,10 +25,7 @@ Plug 'vim-airline/vim-airline' "" Statusbar
 Plug 'ryanoasis/vim-devicons'
 Plug 'tc50cal/vim-terminal' "" Terminal integration
 Plug 'terryma/vim-multiple-cursors'
-Plug 'williamboman/mason.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'jayp0521/mason-nvim-dap.nvim'
-Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 
 call plug#end()
