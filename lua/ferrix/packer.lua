@@ -61,9 +61,15 @@ require('packer').startup(function(use)
   }
 
   -- Fuzzy Finder Algorithm which requires local dependencies to be built.
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'mingw32-make',
-    cond = vim.fn.executable 'mingw32-make' == 1,
-  }
+  if vim.loop.os_uname().sysname == 'Windows_NT' then
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'mingw32-make',
+      cond = vim.fn.executable 'mingw32-make' == 1,
+    }
+  else
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make',
+      cond = vim.fn.executable 'make' == 1,
+    }
+  end
 
   -- Add custom plugins to packed from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
