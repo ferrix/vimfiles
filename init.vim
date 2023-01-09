@@ -34,7 +34,7 @@ nnoremap <leader><tab> :NERDTreeToggle<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
-set guifont=ComicCode\ Light\ NFM:h12
+set guifont=ComicCode\ NFM:h12
 colorscheme spacecamp
 
 set completeopt-=preview
