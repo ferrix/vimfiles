@@ -26,7 +26,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tc50cal/vim-terminal' "" Terminal integration
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jayp0521/mason-nvim-dap.nvim'
-Plug 'nvim-lua/completion-nvim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-obsession'
 
