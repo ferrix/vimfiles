@@ -1,5 +1,5 @@
 autoload
 vendor
 .netrwhist
-plugin/
+plugin/packer_compiled.lua
 
