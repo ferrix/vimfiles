@@ -1,4 +1,5 @@
 autoload
 vendor
 .netrwhist
-./plugin
+plugin/
+
