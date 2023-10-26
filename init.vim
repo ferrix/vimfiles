@@ -22,12 +22,12 @@ Plug 'preservim/tagbar' "" Tag list bar
 Plug 'rafi/awesome-vim-colorschemes' "" Color
 Plug 'ap/vim-css-color' "" CSS color preview
 Plug 'vim-airline/vim-airline' "" Statusbar
-Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons' "" Icons
 Plug 'tc50cal/vim-terminal' "" Terminal integration
 Plug 'terryma/vim-multiple-cursors'
-Plug 'jayp0521/mason-nvim-dap.nvim'
+Plug 'jayp0521/mason-nvim-dap.nvim' "" Debugger integration
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-obsession' "" Sessions
 
 call plug#end()
 
